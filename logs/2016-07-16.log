@@ -1,0 +1,16 @@
+ERROR - 2016-07-16 16:37:25 - exception 'ErrorException' with message 'mysqli_connect(): (HY000/1049): Unknown database 'sww'' in C:\wamp\www\App\Controllers\Signup\SignupController.php:23
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(2, 'mysqli_connect(...', 'C:\\wamp\\www\\App...', 23, Array)
+#1 C:\wamp\www\App\Controllers\Signup\SignupController.php(23): mysqli_connect('localhost', 'root', '', 'sww')
+#2 [internal function]: SignupController->indexAction()
+#3 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#5 [internal function]: SignupController::___indexAction()
+#6 C:\wamp\www\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#7 C:\wamp\www\Yee\Yee.php(1333): Yee\Route->dispatch()
+#8 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\wamp\www\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#12 C:\wamp\www\index.php(48): Yee\Yee->execute()
+#13 {main}

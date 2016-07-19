@@ -1,0 +1,248 @@
+ERROR - 2016-07-12 12:44:58 - exception 'ErrorException' with message 'Problem preparing query (SELECT * FROM users) Table 'sww.users' doesn't exist' in C:\wamp\www\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\wamp\\www\\Yee...', 909, Array)
+#1 C:\wamp\www\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\wamp\www\Yee\Libraries\Database\MysqliDB.php(648): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\wamp\www\Yee\Libraries\Database\MysqliDB.php(273): Yee\Libraries\Database\MysqliDB->_buildQuery(NULL)
+#4 C:\wamp\www\App\Controllers\Signup\SignupController.php(34): Yee\Libraries\Database\MysqliDB->get('users')
+#5 [internal function]: SignupController->postAction('signup22')
+#6 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postAction', Array)
+#8 [internal function]: SignupController::___postAction('signup22')
+#9 C:\wamp\www\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#10 C:\wamp\www\Yee\Yee.php(1333): Yee\Route->dispatch()
+#11 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#12 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#13 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#14 C:\wamp\www\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#15 C:\wamp\www\index.php(48): Yee\Yee->execute()
+#16 {main}
+ERROR - 2016-07-12 12:46:20 - exception 'ErrorException' with message 'mysqli::mysqli(): (HY000/1045): Access denied for user 'username'@'localhost' (using password: YES)' in C:\wamp\www\App\Controllers\Signup\SignupController.php:60
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(2, 'mysqli::mysqli(...', 'C:\\wamp\\www\\App...', 60, Array)
+#1 C:\wamp\www\App\Controllers\Signup\SignupController.php(60): mysqli->mysqli('localhost', 'username', 'password')
+#2 [internal function]: SignupController->postAction('signup22')
+#3 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postAction', Array)
+#5 [internal function]: SignupController::___postAction('signup22')
+#6 C:\wamp\www\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#7 C:\wamp\www\Yee\Yee.php(1333): Yee\Route->dispatch()
+#8 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\wamp\www\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#12 C:\wamp\www\index.php(48): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-12 12:46:24 - exception 'ErrorException' with message 'mysqli::mysqli(): (HY000/1045): Access denied for user 'username'@'localhost' (using password: YES)' in C:\wamp\www\App\Controllers\Signup\SignupController.php:60
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(2, 'mysqli::mysqli(...', 'C:\\wamp\\www\\App...', 60, Array)
+#1 C:\wamp\www\App\Controllers\Signup\SignupController.php(60): mysqli->mysqli('localhost', 'username', 'password')
+#2 [internal function]: SignupController->postAction('signup22')
+#3 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postAction', Array)
+#5 [internal function]: SignupController::___postAction('signup22')
+#6 C:\wamp\www\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#7 C:\wamp\www\Yee\Yee.php(1333): Yee\Route->dispatch()
+#8 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\wamp\www\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#12 C:\wamp\www\index.php(48): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-12 12:57:49 - exception 'ErrorException' with message 'mysqli::mysqli(): (HY000/1045): Access denied for user 'roota'@'localhost' (using password: NO)' in C:\wamp\www\App\Controllers\Signup\SignupController.php:44
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(2, 'mysqli::mysqli(...', 'C:\\wamp\\www\\App...', 44, Array)
+#1 C:\wamp\www\App\Controllers\Signup\SignupController.php(44): mysqli->mysqli('localhost', 'roota', '')
+#2 [internal function]: SignupController->postAction('signup22')
+#3 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postAction', Array)
+#5 [internal function]: SignupController::___postAction('signup22')
+#6 C:\wamp\www\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#7 C:\wamp\www\Yee\Yee.php(1333): Yee\Route->dispatch()
+#8 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\wamp\www\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#12 C:\wamp\www\index.php(48): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-12 13:08:12 - exception 'ErrorException' with message 'Invalid argument supplied for foreach()' in C:\wamp\www\App\Controllers\Signup\SignupController.php:51
+Stack trace:
+#0 C:\wamp\www\App\Controllers\Signup\SignupController.php(51): Yee\Yee::handleErrors(2, 'Invalid argumen...', 'C:\\wamp\\www\\App...', 51, Array)
+#1 [internal function]: SignupController->postAction('signup22')
+#2 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postAction', Array)
+#4 [internal function]: SignupController::___postAction('signup22')
+#5 C:\wamp\www\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\wamp\www\Yee\Yee.php(1333): Yee\Route->dispatch()
+#7 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp\www\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-12 13:08:51 - exception 'ErrorException' with message 'Invalid argument supplied for foreach()' in C:\wamp\www\App\Controllers\Signup\SignupController.php:51
+Stack trace:
+#0 C:\wamp\www\App\Controllers\Signup\SignupController.php(51): Yee\Yee::handleErrors(2, 'Invalid argumen...', 'C:\\wamp\\www\\App...', 51, Array)
+#1 [internal function]: SignupController->postAction('signup22')
+#2 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postAction', Array)
+#4 [internal function]: SignupController::___postAction('signup22')
+#5 C:\wamp\www\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\wamp\www\Yee\Yee.php(1333): Yee\Route->dispatch()
+#7 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp\www\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-12 13:08:56 - exception 'ErrorException' with message 'Invalid argument supplied for foreach()' in C:\wamp\www\App\Controllers\Signup\SignupController.php:51
+Stack trace:
+#0 C:\wamp\www\App\Controllers\Signup\SignupController.php(51): Yee\Yee::handleErrors(2, 'Invalid argumen...', 'C:\\wamp\\www\\App...', 51, Array)
+#1 [internal function]: SignupController->postAction('signup22')
+#2 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postAction', Array)
+#4 [internal function]: SignupController::___postAction('signup22')
+#5 C:\wamp\www\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\wamp\www\Yee\Yee.php(1333): Yee\Route->dispatch()
+#7 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp\www\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-12 13:10:13 - exception 'ErrorException' with message 'Invalid argument supplied for foreach()' in C:\wamp\www\App\Controllers\Signup\SignupController.php:51
+Stack trace:
+#0 C:\wamp\www\App\Controllers\Signup\SignupController.php(51): Yee\Yee::handleErrors(2, 'Invalid argumen...', 'C:\\wamp\\www\\App...', 51, Array)
+#1 [internal function]: SignupController->postAction('signup22')
+#2 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postAction', Array)
+#4 [internal function]: SignupController::___postAction('signup22')
+#5 C:\wamp\www\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\wamp\www\Yee\Yee.php(1333): Yee\Route->dispatch()
+#7 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp\www\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-12 13:11:36 - exception 'ErrorException' with message 'Invalid argument supplied for foreach()' in C:\wamp\www\App\Controllers\Signup\SignupController.php:52
+Stack trace:
+#0 C:\wamp\www\App\Controllers\Signup\SignupController.php(52): Yee\Yee::handleErrors(2, 'Invalid argumen...', 'C:\\wamp\\www\\App...', 52, Array)
+#1 [internal function]: SignupController->postAction('signup22')
+#2 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postAction', Array)
+#4 [internal function]: SignupController::___postAction('signup22')
+#5 C:\wamp\www\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\wamp\www\Yee\Yee.php(1333): Yee\Route->dispatch()
+#7 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp\www\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-12 13:12:04 - exception 'ErrorException' with message 'Invalid argument supplied for foreach()' in C:\wamp\www\App\Controllers\Signup\SignupController.php:52
+Stack trace:
+#0 C:\wamp\www\App\Controllers\Signup\SignupController.php(52): Yee\Yee::handleErrors(2, 'Invalid argumen...', 'C:\\wamp\\www\\App...', 52, Array)
+#1 [internal function]: SignupController->postAction('signup22')
+#2 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postAction', Array)
+#4 [internal function]: SignupController::___postAction('signup22')
+#5 C:\wamp\www\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\wamp\www\Yee\Yee.php(1333): Yee\Route->dispatch()
+#7 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp\www\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-12 13:12:16 - exception 'ErrorException' with message 'Invalid argument supplied for foreach()' in C:\wamp\www\App\Controllers\Signup\SignupController.php:52
+Stack trace:
+#0 C:\wamp\www\App\Controllers\Signup\SignupController.php(52): Yee\Yee::handleErrors(2, 'Invalid argumen...', 'C:\\wamp\\www\\App...', 52, Array)
+#1 [internal function]: SignupController->postAction('signup22')
+#2 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postAction', Array)
+#4 [internal function]: SignupController::___postAction('signup22')
+#5 C:\wamp\www\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\wamp\www\Yee\Yee.php(1333): Yee\Route->dispatch()
+#7 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp\www\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-12 13:12:17 - exception 'ErrorException' with message 'Invalid argument supplied for foreach()' in C:\wamp\www\App\Controllers\Signup\SignupController.php:52
+Stack trace:
+#0 C:\wamp\www\App\Controllers\Signup\SignupController.php(52): Yee\Yee::handleErrors(2, 'Invalid argumen...', 'C:\\wamp\\www\\App...', 52, Array)
+#1 [internal function]: SignupController->postAction('signup22')
+#2 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postAction', Array)
+#4 [internal function]: SignupController::___postAction('signup22')
+#5 C:\wamp\www\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\wamp\www\Yee\Yee.php(1333): Yee\Route->dispatch()
+#7 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp\www\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-12 13:12:20 - exception 'ErrorException' with message 'Invalid argument supplied for foreach()' in C:\wamp\www\App\Controllers\Signup\SignupController.php:52
+Stack trace:
+#0 C:\wamp\www\App\Controllers\Signup\SignupController.php(52): Yee\Yee::handleErrors(2, 'Invalid argumen...', 'C:\\wamp\\www\\App...', 52, Array)
+#1 [internal function]: SignupController->postAction('signup22')
+#2 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postAction', Array)
+#4 [internal function]: SignupController::___postAction('signup22')
+#5 C:\wamp\www\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\wamp\www\Yee\Yee.php(1333): Yee\Route->dispatch()
+#7 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp\www\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-12 13:13:22 - exception 'ErrorException' with message 'Invalid argument supplied for foreach()' in C:\wamp\www\App\Controllers\Signup\SignupController.php:30
+Stack trace:
+#0 C:\wamp\www\App\Controllers\Signup\SignupController.php(30): Yee\Yee::handleErrors(2, 'Invalid argumen...', 'C:\\wamp\\www\\App...', 30, Array)
+#1 [internal function]: SignupController->indexAction()
+#2 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#4 [internal function]: SignupController::___indexAction()
+#5 C:\wamp\www\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\wamp\www\Yee\Yee.php(1333): Yee\Route->dispatch()
+#7 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp\www\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-12 13:13:33 - exception 'ErrorException' with message 'Invalid argument supplied for foreach()' in C:\wamp\www\App\Controllers\Signup\SignupController.php:30
+Stack trace:
+#0 C:\wamp\www\App\Controllers\Signup\SignupController.php(30): Yee\Yee::handleErrors(2, 'Invalid argumen...', 'C:\\wamp\\www\\App...', 30, Array)
+#1 [internal function]: SignupController->indexAction()
+#2 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#4 [internal function]: SignupController::___indexAction()
+#5 C:\wamp\www\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#6 C:\wamp\www\Yee\Yee.php(1333): Yee\Route->dispatch()
+#7 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp\www\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-12 13:13:56 - exception 'ErrorException' with message 'mysqli_connect(): (HY000/1049): Unknown database 'users'' in C:\wamp\www\App\Controllers\Signup\SignupController.php:22
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(2, 'mysqli_connect(...', 'C:\\wamp\\www\\App...', 22, Array)
+#1 C:\wamp\www\App\Controllers\Signup\SignupController.php(22): mysqli_connect('localhost', 'root', '', 'users')
+#2 [internal function]: SignupController->indexAction()
+#3 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#5 [internal function]: SignupController::___indexAction()
+#6 C:\wamp\www\Yee\Route.php(462): call_user_func_array('SignupControlle...', Array)
+#7 C:\wamp\www\Yee\Yee.php(1333): Yee\Route->dispatch()
+#8 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\wamp\www\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#12 C:\wamp\www\index.php(48): Yee\Yee->execute()
+#13 {main}
